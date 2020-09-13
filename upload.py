@@ -57,6 +57,7 @@ try:
     # update the loc for these new creds
     new_creds = resp.json()
     new_creds['loc'] = creds.get('loc')
+    new_creds['refresh_token'] = creds.get('refresh_token')
 
     # store the new creds in the file
     with open(os.path.join(path, 'creds.json'), 'w') as file:
