@@ -51,6 +51,7 @@ try:
         }
         mime = 'image/' + i.split('.')[-1].replace('jpg', 'jpeg')
 
+        # TODO need to handle refresh token!
 
         with open(i, 'rb') as image_file:
             # https://developers.google.com/photos/library/guides/upload-media
@@ -70,7 +71,7 @@ try:
                 ]
             }
             resp = requests.post('https://photoslibrary.googleapis.com/v1/mediaItems:batchCreate', json=payload, headers=bearer)
-            
+
             try:
                 print(resp.json())
             except:
