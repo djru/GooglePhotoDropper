@@ -5,7 +5,7 @@
 Photo Drop creates a cron job that checks on your directory every one minute. If it detects anything with the extension .jpg, .jpeg, .png or .gif, it will upload it to your google photos account and DELETE IT.
 
 ## Why does it delete the photos?
-I wrote this to be a quick and easy way to get photos from my macbook (mostly memes I save from reddit) into Google Photos. Uploading and then deleting them is the use case I was trying to solve for. If you want a full service sync solution, use dropbox or something designed for sync...
+I wrote this to be a quick and easy way to get photos from my macbook (mostly memes I save from reddit) into Google Photos. Uploading and then deleting them is the use case I was trying to solve for, and keeping them around would keeping an index and adding some complex syncing logic. If you want a full service sync solution, use dropbox...
 
 ## How do I know this is safe?
 Well it's open source and the code is pretty simple. Feel free to dig into it yourself.
