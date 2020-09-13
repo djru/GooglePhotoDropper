@@ -41,7 +41,7 @@ try:
 
 
     for i in images:
-        
+        mime = 'image/' + i.split('.')[-1].replace('jpg', 'jpeg')
         # https://stackoverflow.com/questions/45868120/python-post-request-with-bearer-token
         # https://stackoverflow.com/questions/39614675/sending-raw-data-in-python-requests
         head = {**bearer,
@@ -49,7 +49,6 @@ try:
         'X-Goog-Upload-Content-Type': mime,
         'X-Goog-Upload-Protocol': 'raw'
         }
-        mime = 'image/' + i.split('.')[-1].replace('jpg', 'jpeg')
 
         # TODO need to handle refresh token!
 
